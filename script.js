@@ -432,27 +432,22 @@ function initScrollVelocity() {
         // Row 1 (Left)
         if (row1) {
             pos1 -= move;
-            if (pos1 <= -50) pos1 += 50; // Wrap around
-            row1.style.transform = `translateX(${pos1}%)`;
+            if (pos1 <= -50) pos1 += 50;
+            row1.style.transform = `translate3d(${pos1}%, 0, 0)`;
         }
 
         // Row 2 (Right)
         if (row2) {
             pos2 += move;
-            if (pos2 >= 0) pos2 -= 50; // Wrap around (assuming it starts at -50 visually? No, lets start 0 and go positive?)
-            // If we move positive from 0, we see empty space if not carefully set up.
-            // Better: Move Logic for Right: start at -50% and move towards 0.
-            // Let's initialize pos2 to -50.
-            // See initialization below.
-            if (pos2 >= 0) pos2 = -50;
-            row2.style.transform = `translateX(${pos2}%)`;
+            if (pos2 >= 0) pos2 -= 50;
+            row2.style.transform = `translate3d(${pos2}%, 0, 0)`;
         }
 
         // Marquee (Left)
         if (marquee) {
-            posMq -= (move * 0.7); // Slightly slower
+            posMq -= (move * 0.7);
             if (posMq <= -50) posMq += 50;
-            marquee.style.transform = `translateX(${posMq}%)`;
+            marquee.style.transform = `translate3d(${posMq}%, 0, 0)`;
         }
 
         requestAnimationFrame(update);
@@ -499,3 +494,24 @@ function initTestimonialStack() {
 
 // Call new initialization
 initTestimonialStack();
+
+// WhatsApp Contact Form Handler
+function initContactForm() {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        const whatsappMessage = `*New Contact Request from Portfolio*\n\n*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`;
+        const phoneNumber = '919769823409'; // Ansh Paswan's number
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.open(url, '_blank');
+    });
+}
+initContactForm();
