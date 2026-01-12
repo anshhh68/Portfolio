@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Paswan - Full-Stack Developer</title>
+    <meta name="description"
+        content="Explore the portfolio of Ansh Paswan. Full-stack projects, web apps, and innovative solutions.">
+    <meta name="keywords" content="Full-Stack Developer, React, Node.js, Web Development, Portfolio">
+    <meta name="author" content="Ansh Paswan">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ansh Paswan - Full-Stack Developer">
+    <meta property="og:description"
+        content="Passionate Full-Stack Developer building scalable web applications with React, Node.js, and cloud technologies.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="header-left">
+            <span class="header-label">Full-Stack Developer</span>
+        </div>
+        <nav class="header-nav">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#projects" class="nav-link">Works</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+        <nav class="mobile-nav">
+            <a href="#" class="mobile-nav-link" data-index="01">Home</a>
+            <a href="#services" class="mobile-nav-link" data-index="02">Services</a>
+            <a href="#projects" class="mobile-nav-link" data-index="03">Works</a>
+            <a href="#about" class="mobile-nav-link" data-index="04">About</a>
+            <a href="#contact" class="mobile-nav-link" data-index="05">Contact</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="mobile-socials">
+                <a href="https://linkedin.com/in/ansh-paswan-388b2b370/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/anshhh68" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Top Row: Name + Image side by side -->
+        <div class="hero-top">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="title-text" data-animate="title">ANSH</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="title-text" data-animate="title">PASWAN</span>
+                    </span>
+                </h1>
+                <div class="hero-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7V17M17 7H7" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Image positioned parallel to name -->
+            <div class="hero-image-container" data-animate="scale">
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Ansh Paswan - Full-Stack Developer">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Row: Description, CTA, Status -->
+        <div class="hero-bottom">
+            <div class="hero-left">
+                <div class="hero-description">
+                    <p data-animate="fade">Open to job opportunities worldwide.</p>
+                    <p data-animate="fade">Passionate Full-Stack Developer building</p>
+                    <p data-animate="fade">scalable web applications and RESTful APIs.</p>
+                </div>
+
+                <!-- Contact Button - Fixed position -->
+                <a href="#contact" class="hero-cta" data-animate="fade">
+                    <span>CONTACT</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7V17M17 7H7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="hero-status">
+                <span class="status-label" data-animate="fade">PING FOR WORK</span>
+                <span class="status-date" data-animate="fade">JAN'26</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2 class="section-title" data-animate="reveal">What I Do /</h2>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-item" data-animate="slide-up">
+                <div class="service-number">01</div>
+                <h3 class="service-title">Full-Stack Development</h3>
+                <p class="service-desc">From frontend interactions to backend APIs, I build complete web solutions.
+                    React, Node.js, Express.js, and cloud deployment with modern stacks that are scalable and
+                    maintainable.</p>
+            </div>
+
+            <div class="service-item" data-animate="slide-up">
+                <div class="service-number">02</div>
+                <h3 class="service-title">UI/UX & Frontend</h3>
+                <p class="service-desc">Design is more than looks — it's about clarity and connection. I develop clean,
+                    responsive interfaces with TailwindCSS and modern frameworks that feel intuitive across all devices.
+                </p>
+            </div>
+
+            <div class="service-item" data-animate="slide-up">
+                <div class="service-number">03</div>
+                <h3 class="service-title">Backend & APIs</h3>
+                <p class="service-desc">Building robust server-side logic with Node.js, Express.js, Python, and Java.
+                    RESTful APIs, GraphQL endpoints, and database optimization for high-performance applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2 class="section-title" data-animate="reveal">Selected Works /</h2>
+        </div>
+
+        <div class="projects-list">
+            <a href="#" class="project-item" data-animate="slide-up">
+                <div class="project-number">
+                    <span class="number-text">01</span>
+                    <span class="number-glitch">01</span>
+                </div>
+                <div class="project-info">
+                    <span class="project-type">Emergency Services</span>
+                    <h3 class="project-title">Ride Rescue</h3>
+                    <div class="project-meta">
+                        <span>Next.js & Maps</span>
+                        <span>Development</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <div class="preview-placeholder">Rescue App</div>
+                </div>
+            </a>
+
+            <a href="#" class="project-item" data-animate="slide-up">
+                <div class="project-number">
+                    <span class="number-text">02</span>
+                    <span class="number-glitch">02</span>
+                </div>
+                <div class="project-info">
+                    <span class="project-type">Real-Time Application</span>
+                    <h3 class="project-title">Chat Application</h3>
+                    <div class="project-meta">
+                        <span>Full-Stack Social</span>
+                        <span>Development</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <div class="preview-placeholder">Chat App</div>
+                </div>
+            </a>
+
+            <a href="#" class="project-item" data-animate="slide-up">
+                <div class="project-number">
+                    <span class="number-text">03</span>
+                    <span class="number-glitch">03</span>
+                </div>
+                <div class="project-info">
+                    <span class="project-type">Data Visualization</span>
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <div class="project-meta">
+                        <span>Next.js & Chart.js</span>
+                        <span>Development</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <div class="preview-placeholder">Dashboard</div>
+                </div>
+            </a>
+
+            <a href="#" class="project-item" data-animate="slide-up">
+                <div class="project-number">
+                    <span class="number-text">04</span>
+                    <span class="number-glitch">04</span>
+                </div>
+                <div class="project-info">
+                    <span class="project-type">AI/ML Project</span>
+                    <h3 class="project-title">Video Captioning Tool</h3>
+                    <div class="project-meta">
+                        <span>Whisper & YOLOv8</span>
+                        <span>AI Development</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <div class="preview-placeholder">AI Tool</div>
+                </div>
+            </a>
+
+            <a href="#" class="project-item" data-animate="slide-up">
+                <div class="project-number">
+                    <span class="number-text">05</span>
+                    <span class="number-glitch">05</span>
+                </div>
+                <div class="project-info">
+                    <span class="project-type">Full-Stack E-Commerce</span>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <div class="project-meta">
+                        <span>Next.js & Supabase</span>
+                        <span>Development</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+                <div class="project-preview">
+                    <div class="preview-placeholder">E-Commerce</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section with Skills -->
+    <section class="about" id="about">
+        <div class="about-header">
+            <h2 class="marquee-text" data-animate="reveal">
+                <span>DEVELOPER</span>
+                <span class="marquee-separator">•</span>
+                <span>DESIGNER</span>
+                <span class="marquee-separator">•</span>
+                <span>CREATOR</span>
+                <span class="marquee-separator">/</span>
+                <!-- Duplicate for seamless loop -->
+                <span>DEVELOPER</span>
+                <span class="marquee-separator">•</span>
+                <span>DESIGNER</span>
+                <span class="marquee-separator">•</span>
+                <span>CREATOR</span>
+                <span class="marquee-separator">/</span>
+                <span>DEVELOPER</span>
+                <span class="marquee-separator">•</span>
+                <span>DESIGNER</span>
+                <span class="marquee-separator">•</span>
+                <span>CREATOR</span>
+                <span class="marquee-separator">/</span>
+                <span>DEVELOPER</span>
+                <span class="marquee-separator">•</span>
+                <span>DESIGNER</span>
+                <span class="marquee-separator">•</span>
+                <span>CREATOR</span>
+                <span class="marquee-separator">/</span>
+            </h2>
+        </div>
+
+        <div class="skills-section">
+            <!-- Scroll Velocity Skills - Row 1 -->
+            <div class="skills-velocity-wrapper">
+                <div class="skills-velocity-row" id="skills-row-1" data-direction="1">
+                    <div class="skills-track">
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript"><span>JavaScript</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript"><span>TypeScript</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python"><span>Python</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java"><span>Java</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5"><span>HTML5</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS3"><span>CSS3</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                alt="Git"><span>Git</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub"><span>GitHub</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                alt="VS Code"><span>VS Code</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                alt="Figma"><span>Figma</span></div>
+                    </div>
+                    <div class="skills-track">
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript"><span>JavaScript</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript"><span>TypeScript</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python"><span>Python</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java"><span>Java</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5"><span>HTML5</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS3"><span>CSS3</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                alt="Git"><span>Git</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub"><span>GitHub</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                alt="VS Code"><span>VS Code</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                                alt="Figma"><span>Figma</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Velocity Skills - Row 2 -->
+            <div class="skills-velocity-wrapper">
+                <div class="skills-velocity-row" id="skills-row-2" data-direction="-1">
+                    <div class="skills-track">
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React"><span>React</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                alt="Next.js"><span>Next.js</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js"><span>Node.js</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                alt="Express"><span>Express</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                                alt="Tailwind"><span>Tailwind</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB"><span>MongoDB</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL"><span>PostgreSQL</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                                alt="Firebase"><span>Firebase</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                                alt="Redis"><span>Redis</span></div>
+                    </div>
+                    <div class="skills-track">
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React"><span>React</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                                alt="Next.js"><span>Next.js</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js"><span>Node.js</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                                alt="Express"><span>Express</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                                alt="Tailwind"><span>Tailwind</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB"><span>MongoDB</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL"><span>PostgreSQL</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                                alt="Firebase"><span>Firebase</span></div>
+                        <div class="skill-item"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                                alt="Redis"><span>Redis</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="education-section">
+            <div class="education-card" data-animate="slide-up">
+                <div class="education-icon">🎓</div>
+                <h3 class="education-title">Bachelor of Technology</h3>
+                <p class="education-subtitle">Computer Science & Engineering</p>
+                <p class="education-institution">Parul University, Vadodara, Gujarat</p>
+                <span class="education-year">2026</span>
+            </div>
+
+            <div class="certifications-grid" data-animate="slide-up">
+                <div class="cert-item">
+                    <span class="cert-title">Machine Learning</span>
+                    <span class="cert-issuer">Infosys Springboard</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-title">Computer Network</span>
+                    <span class="cert-issuer">IIT Kharagpur</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-title">IoT</span>
+                    <span class="cert-issuer">IIT Kharagpur</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <div class="contact-header-left">
+                <h2 class="contact-title" data-animate="reveal">
+                    <span class="contact-line">Let's</span>
+                    <span class="contact-line">Make It</span>
+                    <span class="contact-line">Happen</span>
+                </h2>
+            </div>
+
+            <div class="contact-header-right">
+                <!-- Twitter Testimonial Cards Structure -->
+                <div class="testimonial-stack" id="testimonial-stack">
+                    <!-- Card 1 (Back) -->
+                    <div class="twitter-card card-0" data-index="0">
+                        <div class="card-header">
+                            <div class="card-avatar-wrapper">
+                                <img src="profile.jpg" alt="Ansh Paswan" class="card-avatar">
+                            </div>
+                            <div class="card-user-info">
+                                <div class="card-name-row">
+                                    <span class="card-name">Ansh Paswan</span>
+                                    <svg class="verified-badge" viewBox="0 0 22 22" fill="currentColor">
+                                        <path
+                                            d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
+                                    </svg>
+                                </div>
+                                <span class="card-handle">@anshhh68</span>
+                            </div>
+                            <svg class="twitter-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </div>
+                        <p class="card-content">Deep diving into Computer Vision! 🧠 Just integrated YOLOv8 with Whisper
+                            for my Video Captioning Tool. The accuracy is insane. #AI #MachineLearning #BuildInPublic
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-date">Jan 3, 2026</span>
+                            <div class="card-stats">
+                                <div class="stat-item">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                    <span>42</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                    </svg>
+                                    <span>8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (Middle) -->
+                    <div class="twitter-card card-1" data-index="1">
+                        <div class="card-header">
+                            <div class="card-avatar-wrapper">
+                                <img src="profile.jpg" alt="Ansh Paswan" class="card-avatar">
+                            </div>
+                            <div class="card-user-info">
+                                <div class="card-name-row">
+                                    <span class="card-name">Ansh Paswan</span>
+                                    <svg class="verified-badge" viewBox="0 0 22 22" fill="currentColor">
+                                        <path
+                                            d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
+                                    </svg>
+                                </div>
+                                <span class="card-handle">@anshhh68</span>
+                            </div>
+                            <svg class="twitter-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </div>
+                        <p class="card-content">Real-time communication is key. ⚡️ Engineered a seamless Chat
+                            Application using Socket.io and MERN stack. Handling concurrency like a pro! 💻 #WebDev
+                            #FullStack</p>
+                        <div class="card-footer">
+                            <span class="card-date">Jan 2, 2026</span>
+                            <div class="card-stats">
+                                <div class="stat-item">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                    <span>28</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                    </svg>
+                                    <span>5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Front) -->
+                    <div class="twitter-card card-2" data-index="2">
+                        <div class="card-header">
+                            <div class="card-avatar-wrapper">
+                                <img src="profile.jpg" alt="Ansh Paswan" class="card-avatar">
+                            </div>
+                            <div class="card-user-info">
+                                <div class="card-name-row">
+                                    <span class="card-name">Ansh Paswan</span>
+                                    <svg class="verified-badge" viewBox="0 0 22 22" fill="currentColor">
+                                        <path
+                                            d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" />
+                                    </svg>
+                                </div>
+                                <span class="card-handle">@anshhh68</span>
+                            </div>
+                            <svg class="twitter-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </div>
+                        <p class="card-content">Officially OPEN FOR WORK! 🚀 Specializing in Next.js, React, and
+                            scalable backend systems. Ready to build robust applications. Let's make it happen! �
+                            #OpenForWork #HireMe</p>
+                        <div class="card-footer">
+                            <span class="card-date">Jan 1, 2026</span>
+                            <div class="card-stats">
+                                <div class="stat-item">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                    <span>156</span>
+                                </div>
+                                <div class="stat-item">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                    </svg>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form-container" data-animate="slide-up">
+                <h3 class="form-title">Say Hello</h3>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7V17M17 7H7" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info" data-animate="slide-up">
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <a href="mailto:paswanansh68@gmail.com" class="info-value">paswanansh68@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Phone</span>
+                    <a href="tel:+919769823409" class="info-value">+91 97698 23409</a>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Vadodara, Gujarat, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <h4>Menu</h4>
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Works</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Socials</h4>
+                <a href="https://linkedin.com/in/ansh-paswan-388b2b370/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/anshhh68" target="_blank">GitHub</a>
+            </div>
+
+            <div class="footer-time">
+                <span class="local-time-label">Local Time</span>
+                <span class="local-time" id="local-time">--:--</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Ansh Paswan. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
