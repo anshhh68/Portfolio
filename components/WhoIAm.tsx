@@ -44,46 +44,46 @@ export default function WhoIAm() {
         {/* Content */}
         <div className="who-i-am-content" ref={contentRef}>
           <p>
-            <strong>💻✨ Full-Stack Developer | Builder | Problem Solver</strong>
+            <strong>✨ Architecting the Digital Future | Lifelong Learner | Maker</strong>
           </p>
 
           <p>
-            I don&apos;t just write code — I build experiences.
+            To me, code isn&apos;t just syntax — it&apos;s a canvas. I don&apos;t just build apps; I forge digital experiences that feel intuitive, seamless, and alive. 
           </p>
 
           <p>
-            Currently pursuing Computer Science, I&apos;m a passionate full-stack developer focused on crafting <strong>scalable, high-performance web applications</strong> with clean architecture and premium UI. From real-time systems to AI-powered tools, I love turning complex ideas into intuitive digital products.
+            I&apos;m currently navigating the depths of Computer Science, driven by an obsession with turning complex logic into <strong>scalable, high-performance solutions</strong>. I thrive on the challenge of taking an abstract idea and sculpting it into a product that genuinely resonates with people.
           </p>
 
           <p>
-            ⚡ My work lives at the intersection of:<br/>
-            🚀 Performance & scalability<br/>
-            🎨 Clean, modern UI/UX<br/>
-            🤖 AI + real-world applications
+            ⚡ My philosophy lives at the intersection of:<br/>
+            🚀 Uncompromising performance<br/>
+            🎨 Beautiful, purposeful design<br/>
+            🧠 Forward-thinking system architecture
           </p>
 
           <p>
-            I&apos;ve built and deployed multiple full-stack projects — from <strong>real-time chat systems</strong> to <strong>AI-driven video captioning tools</strong> — always focusing on speed, usability, and impact. My development approach is rooted in <strong>problem-solving, system thinking, and continuous iteration</strong>.
+            My approach is deeply rooted in <strong>curiosity, systems thinking, and relentless iteration</strong>. I believe that an exceptional application shouldn&apos;t just work perfectly—it should feel like magic to the user. Every pixel, every database query, and every animation is a deliberate choice toward that goal.
           </p>
 
           <p>
-            🧠 Tech I work with:<br/>
+            💻 My creative toolkit:<br/>
             <span style={{ color: "var(--accent)", fontWeight: 600 }}>React • Next.js • Node.js • TypeScript • MongoDB • PostgreSQL • Supabase</span>
           </p>
 
           <p>
-            ⚙️ Beyond coding:<br/>
-            • Active open-source contributor<br/>
-            • Hackathon participant<br/>
-            • Always exploring AI, Web3, and cloud tech
+            ⚙️ When I step away from the IDE:<br/>
+            • I&apos;m diving into open-source communities<br/>
+            • Brainstorming at hackathons<br/>
+            • Surfing the bleeding edge of AI, Web3, and cloud tech
           </p>
 
           <p>
-            I believe great products are not just functional — they feel right.
+            I don&apos;t just want to keep pace with technology — I want to push its boundaries.
           </p>
           
           <p>
-            💡 If it involves building something meaningful, scalable, and slightly challenging — <strong>I&apos;m all in.</strong>
+            💡 If it involves building something bold, solving a difficult puzzle, or making a lasting impact — <strong>I&apos;m all in.</strong>
           </p>
         </div>
       </div>
