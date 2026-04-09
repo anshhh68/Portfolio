@@ -44,25 +44,46 @@ export default function WhoIAm() {
         {/* Content */}
         <div className="who-i-am-content" ref={contentRef}>
           <p>
-            i&apos;m a <strong>builder at heart</strong> 🛠️ — someone who doesn&apos;t just write
-            code, but <strong>crafts aesthetic experiences</strong> ✨.
+            <strong>💻✨ Full-Stack Developer | Builder | Problem Solver</strong>
           </p>
+
           <p>
-            currently diving deep into <strong>computer science</strong> 🎓 while shipping{" "}
-            <strong>full-stack web apps</strong> 🚀. i&apos;m all about blending robust backend systems with visually stunning frontends 🎨.
+            I don&apos;t just write code — I build experiences.
           </p>
+
           <p>
-            from <strong>real-time platforms</strong> ⚡ to{" "}
-            <strong>AI-powered tools</strong> 🤖, my goal is to solve real problems with <strong>performance, clarity, & sick design</strong> 🤌.
+            Currently pursuing Computer Science, I&apos;m a passionate full-stack developer focused on crafting <strong>scalable, high-performance web applications</strong> with clean architecture and premium UI. From real-time systems to AI-powered tools, I love turning complex ideas into intuitive digital products.
           </p>
+
           <p>
-            i thrive on <strong>analytical thinking</strong> 🧠 and{" "}
-            <strong>continuous iteration</strong> 🔄 — building things that aren&apos;t just
-            functional, but <strong>sleek, scalable, and rad</strong> 🔥.
+            ⚡ My work lives at the intersection of:<br/>
+            🚀 Performance & scalability<br/>
+            🎨 Clean, modern UI/UX<br/>
+            🤖 AI + real-world applications
           </p>
+
           <p>
-            if it involves <strong>clean architecture</strong>, smooth UIs, or building
-            something genuinely cool — <strong>count me in</strong> 🎯.
+            I&apos;ve built and deployed multiple full-stack projects — from <strong>real-time chat systems</strong> to <strong>AI-driven video captioning tools</strong> — always focusing on speed, usability, and impact. My development approach is rooted in <strong>problem-solving, system thinking, and continuous iteration</strong>.
+          </p>
+
+          <p>
+            🧠 Tech I work with:<br/>
+            <span style={{ color: "var(--accent)", fontWeight: 600 }}>React • Next.js • Node.js • TypeScript • MongoDB • PostgreSQL • Supabase</span>
+          </p>
+
+          <p>
+            ⚙️ Beyond coding:<br/>
+            • Active open-source contributor<br/>
+            • Hackathon participant<br/>
+            • Always exploring AI, Web3, and cloud tech
+          </p>
+
+          <p>
+            I believe great products are not just functional — they feel right.
+          </p>
+          
+          <p>
+            💡 If it involves building something meaningful, scalable, and slightly challenging — <strong>I&apos;m all in.</strong>
           </p>
         </div>
       </div>
